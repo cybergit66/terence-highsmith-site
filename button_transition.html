@@ -1,0 +1,33 @@
+<!doctype html>
+
+<html>
+	<head>
+		<title>Page Title</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0">
+        <style>
+            button {
+                font: .9em Arial, Helvetica, sans-serif;
+                border-radius: .5em;
+                background-color: #FF6603;
+                border: 1px solid rgba(0,0,0,.5);
+                padding: .5em;
+                transition-property: transform, color, background-color, border-color;
+                transition-duration: 2s, 2s, 1s;
+                transition-delay: 0, 0, 1s;
+
+            }
+            
+            button:hover {
+                transform: scale(1.2);
+                color: white;
+                background-color: #660034;
+                border-color: #FF6603;
+            }
+        </style>
+	</head>
+
+	<body>
+        <button>Transition</button>
+	</body>
+</html>

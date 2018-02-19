@@ -5,10 +5,44 @@
 		<title>Terence Highsmith</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="initial-scale=1.0">
+<!--        <link href="https://fonts.googleapis.com/css?family=BioRhyme" rel="stylesheet">-->
+<!--        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">-->
+        <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+        <link rel="stylesheet" href="css/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css" />
         <link href="css/tstyle.css" rel="stylesheet" />
+        <style>
+            body {
+/*                font-family: 'BioRhyme', serif;*/
+/*                font-family: 'Libre Baskerville', serif;*/
+                font-family: 'Cabin', sans-serif;
+
+            } 
+            section.about .grid div {
+                position: relative;
+                z-index: -1;
+            }
+            .box-header {
+                position: absolute;
+                top: -11%;
+                left: 20%;
+                width: 225px;
+                padding: 20px;
+                background: #ccc;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            div.wide {
+                flex: 1 1 55%;
+            }
+            .parallax .grid div {
+                background: transparent;
+                color: #fff;
+            }
+        </style>
 	</head>
 
 	<body>
+        
         <header>
             <p>Terence Highsmith</p>
             <div>
@@ -19,14 +53,125 @@
                 <a href="#">Contact</a>
             </div>
         </header>
-        
+        <div class="main">
         <section class="about">
-            <h3 class="title">About Me</h3>
+<!--            <h3 class="title">A Little About Me</h3>-->
+            <div class="grid">
+                <div>
+                    <p class="box-header">what i do</p>
+                    <p>Nam sodales est eget metus feugiat pharetra. Aliquam quis nisi turpis. Proin eget erat ex. Suspendisse sed interdum risus, nec dictum quam. Nulla in lorem sed leo semper finibus vitae sed ligula. Quisque id semper sapien. Vestibulum non nibh risus. In at dolor aliquam elit tempor hendrerit et ut purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent non cursus quam, ut commodo nulla. Nam eleifend leo metus, at varius enim pellentesque sed. Nulla tristique at augue et tristique. Aenean turpis arcu, tincidunt non arcu sit amet, maximus pulvinar libero. Praesent pharetra nunc id volutpat eleifend.</p>
+                </div>
+                <div>
+                    <p class="box-header"> Accomplishmets</p>
+                </div>
+                <div>
+                    <p class="box-header">Personal Data</p>
+                    <p>Age: 51</p>
+                    <p>Phone: 256.583.5178</p>
+                    <p>Email: terence.highsmith@gmail.com</p>
+                    <p>Website: www.terencehighsmith.com</p>
+                    <p>Nationality: American</p>
+                    <br />
+                    <h4>Education</h4>
+                    <p>Harding School of Theology</p>
+                    <p>University of Phoenix</p>
+                    <p>East Carolina University</p>
+                </div>
+            </div>
+        </section>
+        <section class="parallax">
+            <div class="grid">
+                <div>Skills</div>
+                <div class="wide">Additional skills</div>
+            </div>
+        </section>
+        <section class="projects">
+            <h3 class="title">Projects</h3>
+            <div class="grid">
+                <figure>
+                    <img src="img/luca-bravo-217276%20computer1.jpg"  height="250" />
+                    <figcaption>Figure 1: Even the carpet-like <em>Carpetorium Pratensis</em> requires mowing.</figcaption>
+                </figure>
+                
+                <figure>
+                    <img src="img/markus-spiske-109588%20computer%202.jpg"  height="250" />
+                    <figcaption>Figure 1: Even the carpet-like <em>Carpetorium Pratensis</em> requires mowing.</figcaption>
+                </figure>
+                
+                <figure>
+                    <img src="img/johannes-plenio-377226%20computer%203.jpg" height="250" />
+                    <figcaption>Figure 1: Even the carpet-like <em>Carpetorium Pratensis</em> requires mowing.</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section class="parallax"></section>
+        <section class="blog">
+            <h3 class="title">Blog Section</h3>
             <div class="grid">
                 <div></div>
                 <div></div>
                 <div></div>
             </div>
         </section>
+        <section class="parallax"></section>
+        <section class="experience">
+            <h3 class="title">Experiences</h3>
+            <div class="grid">
+                <div>
+                    <h4>Career Title</h4>
+                    <p>Cras nec suscipit magna. In quis pulvinar dui. Integer auctor a dolor eget pretium. Vestibulum tempus vitae elit sed blandit. Suspendisse auctor suscipit felis, non eleifend risus dictum tempus. Morbi sed nisl tortor. Quisque at iaculis lacus, eu tempor justo.</p>
+                </div>
+                <div>
+                    <h4>My Skills</h4>
+                    <p>Skill one</p>
+                    <p>Skill one</p>
+                    <p>Skill one</p>
+                    <p>Skill one</p>
+                </div>
+            </div>
+            <div class="resume-grid">
+                <div>
+                    <h5>Cyber Security Analyst</h5>
+                    <span>2005 - Present</span>
+                </div>
+                <p>Cras nec suscipit magna. In quis pulvinar dui. Integer auctor a dolor eget pretium. Vestibulum tempus vitae elit sed blandit. Suspendisse auctor suscipit felis, non eleifend risus dictum tempus.
+                <div>
+                    <h5>Cyber Security Analyst</h5>
+                    <span>2005 - Present</span>
+                </div>
+                <p>Cras nec suscipit magna. In quis pulvinar dui. Integer auctor a dolor eget pretium. Vestibulum tempus vitae elit sed blandit. Suspendisse auctor suscipit felis, non eleifend risus dictum tempus.
+                <div>
+                    <h5>Cyber Security Analyst</h5>
+                    <span>2005 - Present</span>
+                </div>
+                <p>Cras nec suscipit magna. In quis pulvinar dui. Integer auctor a dolor eget pretium. Vestibulum tempus vitae elit sed blandit. Suspendisse auctor suscipit felis, non eleifend risus dictum tempus.
+                <div>
+                    <h5>Cyber Security Analyst</h5>
+                    <span>2005 - Present</span>
+                </div>
+                <p>Cras nec suscipit magna. In quis pulvinar dui. Integer auctor a dolor eget pretium. Vestibulum tempus vitae elit sed blandit. Suspendisse auctor suscipit felis, non eleifend risus dictum tempus.
+            </div>
+        </section>
+        <section class="contact">
+            <h3 class="title">Contact</h3>
+            <div class="contact-grid">
+                <p><i class="fa fa-phone fa-lg" aria-hidden="true"></i>256.583.5178</p>
+                <p><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>Jamestown Rd Huntsville AL 35810</p>
+                <p><i class="fa fa-envelope fa-lg" aria-hidden="true"></i>terence.highsmith@gmail.com</p>
+            </div>
+            <form>
+                <div class="input-style">
+                    <input type="text">
+                    <input type="text">
+                    <input type="text">
+                </div>
+                <div>
+                    <textarea name="field5" id="field5"></textarea>
+                </div>
+                <button type="submit">Contact me</button>
+            </form>
+        </section>
+            </div>
+        <footer></footer>
 	</body>
 </html>
