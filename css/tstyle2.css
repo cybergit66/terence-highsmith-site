@@ -1,0 +1,300 @@
+/* reset browser styles */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.2;
+}
+ol { 
+	padding-left: 1.4em;
+	list-style: decimal;
+}
+ul {
+	padding-left: 1.4em;
+	list-style: square;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} 
+/* end reset browser styles */
+
+/* site wide styles */
+html {
+    height: 100%;
+}
+
+body {
+        color: #444444;
+    }
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #222222;
+}
+
+h4 {
+    border-bottom: 1px solid #222222;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+/* header and nav */
+header {
+    display: flex;
+    align-items: baseline;
+    border-bottom: 1.5px solid rgb(220,220,220);
+    padding: 20px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    background: #ffffff;
+}
+
+nav {
+    display: flex;
+    align-items: baseline;
+    width: 968px;
+    margin: auto;
+}
+
+header p {
+    margin-right: auto;
+    text-transform: uppercase;
+    flex: 0 1 auto;
+}
+
+header div {
+/*    margin-right: 20px;*/
+    display: flex;
+}
+
+header div a {
+    text-decoration: none;
+    color: #444444;
+    text-transform: uppercase;
+    padding: 10px;
+    text-align: center;
+    display: inline-block;
+    flex: 1 1 auto;
+}
+
+header div a:nth-of-type(1n+2) {
+    margin-left: 15px;
+}
+
+
+header div a:after {
+    display:block;
+    content: '';
+    border-bottom: solid 1px #000;
+    transform: scaleX(0);  
+    transform-origin: left center;
+    transition: transform 500ms ease-in-out;
+}
+
+header div a:hover:after {
+    transform: scaleX(1);
+    transform-origin:  0% 50%;
+    transition: 500ms;
+}
+
+/* general section */
+
+.main {
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+section {
+    padding-top: 35px;
+    margin-bottom: 65px;
+
+}
+
+section h3 {
+    padding-bottom: 50px;
+    text-align: center
+}
+
+/* parallax sections */
+.parallax {
+    /* The image used */
+    background-image: url("../img/luis-poletti-17300%20beautiful%20sky.jpg");
+
+    /* Set a specific height */
+    min-height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    /* create tint over background */
+    box-shadow:inset 0 0 0 2000px rgba(0,0,0,0.5);
+}
+
+/* general grid */
+.grid {
+    display: -webkit-flex;
+    display: flex;
+    width: 968px;
+    margin: auto;
+}
+
+.grid div {
+/*    flex:  1 1 33%;*/
+    padding: 30px 15px;
+}
+
+.grid div p {
+    margin-top: 10px
+}
+
+/* about me section */
+section.about {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.about .grid .about-me {
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 3px rgba(0,0,0,.5);
+}
+
+section.about .grid div {
+    position: relative;
+    z-index: -1;
+}
+
+.about .grid .photo-container {
+    flex: 0 1 25%;
+}
+
+.about .grid .info-container {
+    flex: 1 1 75%;
+}
+
+.about .grid .info-container h1 {
+    font-size: 35px;
+}
+
+.about .grid .photo-container img {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 3px rgba(0,0,0,.5);
+}
+
+
+/* projects section */
+.projects .grid {
+    justify-content: space-between;
+}
+
+.projects .grid div {
+    flex: 1 1 33%;
+    height: 350px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 3px rgba(0,0,0,.5);
+}
+
+.projects .grid div:nth-of-type(1n+2) {
+    margin-left: 10px;
+}
+
+
+/* resume grid */
+
+.resume-grid {
+    display: flex;
+    flex-direction: column;
+    width: 968px;
+    margin: auto;
+}
+
+.resume-grid div {
+    display: flex;
+    border-bottom: .5px solid #444444;
+}    
+
+.resume-grid p {
+    margin: 35px 0;
+}
+
+.resume-grid h5 {
+    margin-right: auto;
+}
+
+/* contact grid */
+.contact-grid {
+    display: flex;
+    justify-content: space-between;
+    width: 968px;
+    margin: auto;
+}
+
+/*.contact .grid p {
+    -webkit-flex: 1;
+    flex: 1 1 33%;
+    align-content: center;
+}*/
+
+/* projects grid */
+.projects .grid div {
+
+}
+
+/* contact grid */
+form {
+    display: flex;
+    width: 1110px;
+    margin: auto;
+    padding-top: 90px;
+}
+
+form div {
+    flex: 1;
+}
+
+form div textarea {
+    width: 100%;
+    height: 100%;
+    margin-left: 25px;
+}
+
+ form .input-style {
+    display: flex;
+    flex-direction: column;
+}
+
+form .input-style input:nth-child(1n+2) {
+    margin-top: 5px;
+}
+
+form button {
+    flex: 0; 
+}
+
+/* footer */
+footer {
+    height: 100px;
+    background: black;
+}
