@@ -16,83 +16,80 @@
 /*                font-family: 'Libre Baskerville', serif;*/
                 font-family: 'Cabin', sans-serif;
 
-            } 
-            .about-me {
-                display: flex;
             }
-            
-            .photo-container button {
-                width: 100%;
-                height: 60px;
-                background: transparent;
+
+            .resume-grid {
                 border: 1px solid #ccc;
                 box-shadow: 0px 0px 3px rgba(0,0,0,.5);
-                text-transform: uppercase;
+                padding: 30px;
             }
             
-            .photo-text {
-                text-align: center;
-            }
+            .contact-grid {
+                width: 968px;
+                margin: auto;
+                border: 1px solid #ccc;
+                box-shadow: 0px 0px 3px rgba(0,0,0,.5);
+                padding: 30px;
+            }   
             
-            .job-title {
-                font-size: 18px;
-            }
-            
-            .job-description {
-                line-height: 1.6;
-            }
-            
-            .contact-info {
-                padding: 0 !important;
+            .contact-info-box {
                 display: flex;
-            } 
-            
-            .contact-info div {
-                padding: 0;
+                justify-content: space-around;
             }
             
-            .contact-info p {
-                line-height: 1.5;
-                font-size: 16px;
+            .contact-form {
+                width: 700px;
+                margin: 50px auto;
             }
             
-            .contact-info div.contact-info-left {
-
+            .contact-form .input-style {
+                margin-bottom: 15px;
+                
             }
             
-            .contact-info div.contact-info-right {
-                margin-left: 40px;
+            .field-full input {
+                width: 100%;
             }
             
-            .social-links {
-                padding: 0 !important;
+            .field-split input {
+                width: 49%;
             }
             
+            .input-style .align-right {
+                float: right;
+            }
+            
+            .input-style input {
+                padding: 10px   
+            }
+            
+            .message-box textarea {
+                width: 100%;
+                height: 150px;
+            }
         </style>
 	</head>
 
 	<body>
-        
         <header>
             <nav>
                 <p>Terence Highsmith</p>
                 <div>
                     <a href="#">Home</a>
-                    <a href="#">Projects</a>
-<!--                    <a href="#">Blog Section</a>-->
-                    <a href="#">Experiences</a>
-                    <a href="#">Contact</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#experiences">Experiences</a>
+                    <a href="#contact">Contact</a>
                 </div>
             </nav>
         </header>
         <div class="main">
-        <section class="about">
+        <section id="about" class="about">
 <!--            <h3 class="title">A Little About Me</h3>-->
             <div class="grid">
                 <div class="about-me">
                     <div class="photo-container">
-                        <img src="img/TerenceHighsmith.jpg" alt="Terence Highsmith">
-                        <button>Download Resume</button>
+                        <img src="https://pbs.twimg.com/profile_images/778452374264217600/6jOSz0vS_400x400.jpg" alt="Terence Highsmith">
+                        <button class="btn1">Download Resume</button>
                         <p class="photo-text">available on Upwork</p>
                     </div>
                     <div class="info-container">
@@ -108,9 +105,9 @@
                                 <p>Age</p>
                                 <p>Address</p>
                                 <p>Email</p>
-                                <p>Social Links</p>
+<!--                                <p>Social Links</p>-->
                             </div>
-                            <div>
+                            <div class="contact-info-left-data">
                                 <p>52</p>
                                 <p>3726 Jamestown Rd, Huntsville, AL</p>
                                 <p>terence.highsmith@gmail.com</p>
@@ -121,29 +118,36 @@
                                 <p>Phone</p>
                                 <p>Nationality</p>
                             </div>
-                            <div>
+                            <div class="contact-info-right-data">
                                 <p>www.terencehighsmith.com</p>
                                 <p>256.583.5178</p>
                                 <p>American</p>
                             </div>
+                        </div>
+                        <div class="social-links">
+                            <span>Social Links </span>
+                            <span><i class="fa fa-linkedin-square fa-lg"></i></span>
+                            <span><i class="fa fa-facebook-square fa-lg"></i></span>
+                            <span><i class="fa fa-twitter fa-lg"></i></span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         
-        <section class="projects">
-            <h3 class="title">Projects</h3>
+        <section id="projects" class="projects">
+            <h2 class="title">Projects</h2>
             <div class="grid">
-                <div class="project"></div>
-                <div class="project"></div>
-                <div class="project"></div>
+                <div class="project"><p>COMING SOON</p></div>
+                <div class="project"><p>COMING SOON</p></div>
+                <div class="project"><p>COMING SOON</p></div>
             </div>
         </section>
 
-        <section class="experience">
-            <h3 class="title">Experiences</h3>
+        <section id="experiences" class="experience">
+            
             <div class="resume-grid">
+                <h2 class="title">Experiences</h2>
                 <div>
                     <h5>Cyber Security Analyst</h5>
                     <span>2005 - Present</span>
@@ -166,26 +170,36 @@
                 <p>Cras nec suscipit magna. In quis pulvinar dui. Integer auctor a dolor eget pretium. Vestibulum tempus vitae elit sed blandit. Suspendisse auctor suscipit felis, non eleifend risus dictum tempus.
             </div>
         </section>
-        <section class="contact">
-            <h3 class="title">Contact</h3>
+            
+        <section id="contact" class="contact">
             <div class="contact-grid">
-                <p><i class="fa fa-phone fa-lg" aria-hidden="true"></i>256.583.5178</p>
-                <p><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>Jamestown Rd Huntsville AL 35810</p>
-                <p><i class="fa fa-envelope fa-lg" aria-hidden="true"></i>terence.highsmith@gmail.com</p>
+                <h2 class="title">Contact Me</h2>
+                <div class="contact-info-box">
+                    <p><span><i class="fa fa-phone fa-lg" aria-hidden="true"></i></span><span class="data">256.583.5178</span></p>
+                    <p><span><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i></span><span class="data">3726 Jamestown Rd Huntsville AL 35810</span></p>
+                    <p><span><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></span><span class="data">terence.highsmith@gmail.com</span></p>
+                </div>
+                <form class="contact-form">
+                    <div class="input-style field-split">
+                        <input type="text" placeholder="Name">
+                        <input class="align-right" type="text" placeholder="Email Address">
+                    </div>
+                    <div class="input-style field-split">
+                        <input type="text" placeholder="Phone Number">
+                        <input class="align-right" type="text" placeholder="Website">
+                    </div>
+                    <div class="input-style field-full">
+                        <input type="text" placeholder="Subject">
+                    </div>
+                    <div class="message-box">
+                        <textarea name="field5" id="field5" placeholder="Message"></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
             </div>
-            <form>
-                <div class="input-style">
-                    <input type="text">
-                    <input type="text">
-                    <input type="text">
-                </div>
-                <div>
-                    <textarea name="field5" id="field5"></textarea>
-                </div>
-                <button type="submit">Contact me</button>
-            </form>
+            
         </section>
             </div>
-        <footer></footer>
+        <footer><p>Terence Highsmith &copy; 2018. All Rights Reserved</p></footer>
 	</body>
 </html>
