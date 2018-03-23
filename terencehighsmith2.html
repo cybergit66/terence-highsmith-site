@@ -98,13 +98,34 @@
                 background: #fff;
                 border-top: 1px solid #ccc;
             }
+
+            @keyframes moveInLeft {
+                0% {
+                    opacity: 0;
+                    transform: translate(-100px);
+                }
+
+                80% {
+                    opacity: 1;
+                    transform: translate(10px);
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: translate(0);
+                }
+            }
+
+            nav p.brand {
+                animation: moveInLeft 2s ease-in;
+            }
         </style>
 	</head>
 
 	<body>
         <header>
             <nav>
-                <p>Terence Highsmith</p>
+                <p class="brand">Terence Highsmith</p>
                 <div>
                     <a href="#">Home</a>
                     <a href="#projects">Projects</a>
