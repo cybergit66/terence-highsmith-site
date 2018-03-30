@@ -29,6 +29,48 @@ table {
 } 
 /* end reset browser styles */
 
+/* colors
+*** Primary color:
+
+   shade 0 = #2B7D41 = rgb( 43,125, 65) = rgba( 43,125, 65,1) = rgb0(0.169,0.49,0.255)
+   shade 1 = #7DBC8E = rgb(125,188,142) = rgba(125,188,142,1) = rgb0(0.49,0.737,0.557)
+   shade 2 = #4E9B62 = rgb( 78,155, 98) = rgba( 78,155, 98,1) = rgb0(0.306,0.608,0.384)
+   shade 3 = #125F26 = rgb( 18, 95, 38) = rgba( 18, 95, 38,1) = rgb0(0.071,0.373,0.149)
+   shade 4 = #013F11 = rgb(  1, 63, 17) = rgba(  1, 63, 17,1) = rgb0(0.004,0.247,0.067)
+
+*** Secondary color (1):
+
+   shade 0 = #265B68 = rgb( 38, 91,104) = rgba( 38, 91,104,1) = rgb0(0.149,0.357,0.408)
+   shade 1 = #69929B = rgb(105,146,155) = rgba(105,146,155,1) = rgb0(0.412,0.573,0.608)
+   shade 2 = #427581 = rgb( 66,117,129) = rgba( 66,117,129,1) = rgb0(0.259,0.459,0.506)
+   shade 3 = #10434F = rgb( 16, 67, 79) = rgba( 16, 67, 79,1) = rgb0(0.063,0.263,0.31)
+   shade 4 = #022B35 = rgb(  2, 43, 53) = rgba(  2, 43, 53,1) = rgb0(0.008,0.169,0.208)
+
+*** Secondary color (2):
+
+   shade 0 = #A7703A = rgb(167,112, 58) = rgba(167,112, 58,1) = rgb0(0.655,0.439,0.227)
+   shade 1 = #FBD1A7 = rgb(251,209,167) = rgba(251,209,167,1) = rgb0(0.984,0.82,0.655)
+   shade 2 = #D09B68 = rgb(208,155,104) = rgba(208,155,104,1) = rgb0(0.816,0.608,0.408)
+   shade 3 = #7F4B18 = rgb(127, 75, 24) = rgba(127, 75, 24,1) = rgb0(0.498,0.294,0.094)
+   shade 4 = #552B01 = rgb( 85, 43,  1) = rgba( 85, 43,  1,1) = rgb0(0.333,0.169,0.004)
+
+*** Complement color:
+
+   shade 0 = #A7463A = rgb(167, 70, 58) = rgba(167, 70, 58,1) = rgb0(0.655,0.275,0.227)
+   shade 1 = #FBB1A7 = rgb(251,177,167) = rgba(251,177,167,1) = rgb0(0.984,0.694,0.655)
+   shade 2 = #D07468 = rgb(208,116,104) = rgba(208,116,104,1) = rgb0(0.816,0.455,0.408)
+   shade 3 = #7F2418 = rgb(127, 36, 24) = rgba(127, 36, 24,1) = rgb0(0.498,0.141,0.094)
+   shade 4 = #550B01 = rgb( 85, 11,  1) = rgba( 85, 11,  1,1) = rgb0(0.333,0.043,0.004)
+
+*** Greys ***
+#808286
+#5D6159
+#E9E9E9
+#C7C7C7
+#9DAAA9
+
+*/
+
 /* site wide styles */
 html {
     height: 100%;
@@ -82,13 +124,13 @@ h4 {
 header {
     display: flex;
     align-items: baseline;
-    border-bottom: 1.5px solid rgb(220,220,220);
+/*    border-bottom: 1.5px solid rgb(220,220,220);*/
     padding: 20px 20px;
     position: fixed;
     top: 0;
     width: 100%;
     overflow: hidden;
-    background: #fff;
+    background: #2B7D41;
 }
 
 nav {
@@ -132,8 +174,9 @@ header div {
 
 header div a {
     text-decoration: none;
-    color: #444444;
+    color: #ccc;
     text-transform: uppercase;
+    font-weight: 500;
     padding: 10px;
     text-align: center;
     display: inline-block;
