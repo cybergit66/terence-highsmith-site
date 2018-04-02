@@ -74,10 +74,13 @@ table {
 /* site wide styles */
 html {
     height: 100%;
+    font-size: 16px;
 }
 
 body {
         color: #444444;
+        background-color: #E9E9E9;
+        font-size: 1rem;
     }
 
 * {
@@ -99,8 +102,8 @@ h4 {
 .btn:link,
 .btn:visited {
     display: inline-block;
-    color: #444444;
-    background-color: transparent;
+    color: #ccc;
+    background-color: #A7463A;
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
@@ -191,7 +194,7 @@ header div a:nth-of-type(1n+2) {
 header div a:after {
     display:block;
     content: '';
-    border-bottom: solid 1px #000;
+    border-bottom: solid 1px #ccc;
     transform: scaleX(0);  
     transform-origin: left center;
     transition: transform 500ms ease-in-out;
@@ -211,9 +214,7 @@ header div a:hover:after {
 }
 
 section {
-    padding-top: ;
     margin-bottom: 45px;
-
 }
 
 section h2 {
@@ -242,6 +243,7 @@ section h2 {
 /* about me section */
 .about-me {
     display: flex;
+    background-color: #C7C7C7;
 }
 
 section.about {
@@ -278,7 +280,7 @@ section.about {
 }
 
 .photo-container button:hover {
-    background-color: #660034;
+    
 }
 
 .photo-text {
@@ -365,6 +367,7 @@ section.about {
     border: 1px solid #ccc;
     box-shadow: 0px 0px 3px rgba(0,0,0,.5);
     padding: 30px;
+    background-color: #C7C7C7;
 }
 
 .projects .grid div:nth-of-type(1n+2) {
@@ -385,6 +388,7 @@ section.about {
     border: 1px solid #ccc;
     box-shadow: 0px 0px 3px rgba(0,0,0,.5);
     padding: 30px;
+    background-color: #C7C7C7;
 }
 
 .resume-grid div {
@@ -407,6 +411,7 @@ section.about {
     border: 1px solid #ccc;
     box-shadow: 0px 0px 3px rgba(0,0,0,.5);
     padding: 30px;
+    background-color: #C7C7C7;
 }   
 
 .contact-info-box {
@@ -458,7 +463,7 @@ button.submit-btn {
 }
 
 .contact-form button {
-    background-color: 
+    background-color: #A7463A; 
 }
 
 /* footer */
@@ -469,6 +474,7 @@ footer {
     right: 0;
     padding: 10px;
     text-align: center;
-    background: #fff;
+    background: #2B7D41;
     border-top: 1px solid #ccc;
+    color: #ccc;
 }
